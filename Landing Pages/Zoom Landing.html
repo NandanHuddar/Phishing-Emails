@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Zoom</title>
+</head>
+<body style="background-color: #f7f7fa; min-height: 100vh; margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;">
+    <header style="background: #fff; border-bottom: 1px solid #e4e4ed; padding: 1rem 2rem;">
+        <nav style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+            <div class="logo" style="display: flex; align-items: center;">
+                <img src="logo.png" alt="Zoom" style="height: 36px; width: auto;">
+            </div>
+            <div class="nav-right" style="display: flex; align-items: center; gap: 1.5rem;">
+                <span>New to Zoom? <a href="#" style="color: #0b5cff; text-decoration: none; font-weight: 500;">Sign Up Free</a></span>
+                <a href="#" style="color: #747487; text-decoration: none;">Support</a>
+                <div style="display: flex; align-items: center; gap: 0.5rem; color: #747487; cursor: pointer;">
+                    <span>English</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24">
+                        <path d="M7 10l5 5 5-5z"></path>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main style="max-width: 440px; margin: 2rem auto; padding: 0 1rem;">
+        <div style="background: #fff; padding: 2rem; border-radius: 12px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);">
+            <h1 style="font-size: 1.75rem; margin-bottom: 1.5rem; color: #232333;">Sign In</h1>
+            <form class="sign-in-form">
+                <div style="margin-bottom: 1rem; position: relative;">
+                    <input type="email" id="email" placeholder="Email Address" style="width: calc(100% - 2rem); padding: 0.75rem 1rem; border: 1px solid #e4e4ed; border-radius: 8px; font-size: 1rem; outline: none; transition: border-color 0.2s;">
+                </div>
+                <div style="margin-bottom: 1rem; position: relative;">
+                    <input type="password" id="password" placeholder="Password" style="width: calc(100% - 2rem); padding: 0.75rem 1rem; border: 1px solid #e4e4ed; border-radius: 8px; font-size: 1rem; outline: none; transition: border-color 0.2s;">
+                </div>
+                <div style="display: flex; justify-content: space-between; margin: 1rem 0;">
+                    <a href="#" style="color: #0b5cff; text-decoration: none; font-size: 0.875rem;">Forgot password?</a>
+                    <a href="#" style="color: #0b5cff; text-decoration: none; font-size: 0.875rem;">Help</a>
+                </div>
+                <button type="submit" style="width: 100%; padding: 0.75rem; background: #0b5cff; color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 500; cursor: pointer; margin: 1rem 0;">Sign In</button>
+                <div style="display: flex; align-items: center; gap: 0.5rem; margin: 1rem 0; color: #747487;">
+                    <label>
+                        <input type="checkbox"> Stay signed in
+                    </label>
+                </div>
+                <div style="font-size: 0.875rem; color: #747487; margin: 1rem 0; text-align: center;">
+                    By signing in, I agree to the <a href="www.zoom.ie" style="color: #0b5cff; text-decoration: none;">Zoom's Privacy Statement</a> and <a href="#" style="color: #0b5cff; text-decoration: none;">Terms of Service</a>
+                </div>
+            </form>
+            <div style="text-align: center; margin: 1.5rem 0; position: relative;">
+                <div style="position: relative; display: flex; align-items: center; justify-content: center;">
+                    <div style="flex: 1; height: 1px; background-color: #e4e4ed;"></div>
+                    <span style="color: #747487; font-size: 0.875rem; padding: 0 10px; background: #fff; margin: 0 10px;">Or sign in with</span>
+                    <div style="flex: 1; height: 1px; background-color: #e4e4ed;"></div>
+                </div>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.5rem; margin: 1.5rem 0;">
+                <button style="padding: 0.5rem; border: 1px solid #e4e4ed; border-radius: 8px; background: white; cursor: pointer; font-size: 0.875rem; color: #747487;">SSO</button>
+                <button style="padding: 0.5rem; border: 1px solid #e4e4ed; border-radius: 8px; background: white; cursor: pointer; font-size: 0.875rem; color: #747487;">Apple</button>
+                <button style="padding: 0.5rem; border: 1px solid #e4e4ed; border-radius: 8px; background: white; cursor: pointer; font-size: 0.875rem; color: #747487;">Google</button>
+                <button style="padding: 0.5rem; border: 1px solid #e4e4ed; border-radius: 8px; background: white; cursor: pointer; font-size: 0.875rem; color: #747487;">Facebook</button>
+            </div>
+            <div style="font-size: 0.75rem; color: #747487; text-align: center;">
+                Zoom is protected by reCAPTCHA and the <a href="#" style="color: #0b5cff; text-decoration: none;">Privacy Policy</a> and <a href="#" style="color: #0b5cff; text-decoration: none;">Terms of Service</a> apply.
+            </div>
+        </div>
+    </main>
+</body>
+</html>
