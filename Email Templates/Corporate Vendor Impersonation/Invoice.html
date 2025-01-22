@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspicious Invoice Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .email {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .email-header {
+            background-color: #ffffff;
+            color: #333;
+            padding: 30px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        .email-body {
+            padding: 20px;
+            color: #333;
+        }
+        .email-body h3 {
+            color: #e74c3c; /* Red for urgency */
+            font-size: 22px;
+        }
+        .email-body p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .download-button {
+            display: inline-block;
+            padding: 25px 25px;
+            background-color: #006b3f;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 1px solid #006b3f;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+            width: auto;
+        }
+        .download-button:hover {
+            background-color: #005732; /* Darker Green */
+        }
+        .paypal-button {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #fff; /* White background */
+            color: #000; /* Black text */
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            border: 1px solid #0070ba; /* Border matching PayPal Blue */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transition: background-color 0.3s;
+            width: auto;
+            min-width: 200px; /* Minimum width for button */
+        }
+        .paypal-button:hover {
+            background-color: #f1f1f1; /* Light hover effect */
+        }
+        .paypal-button img {
+            height: 40px; /* Adjust logo size */
+            margin-left: 10px; /* Space between text and logo */
+            vertical-align: middle; /* Align logo vertically */
+        }
+        .email-footer {
+            background-color: #f1f1f1;
+            padding: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="email">
+        <!-- Header -->
+        <div class="email-header">
+            <h2>Invoice #98765 - Payment Due</h2>
+        </div>
+        <!-- Body -->
+        <div class="email-body">
+            <p>Dear [Recipient Name],</p>
+            <p>I hope you're doing well. I'm reaching out to remind you that the invoice for the recent services I provided is now due for payment. Below are the details:</p>
+            <p><strong>Invoice Number:</strong> #98765</p>
+            <p><strong>Amount Due:</strong> $250.00</p>
+            <p><strong>Due Date:</strong> [Insert Date]</p>
+            <p>Please make the payment via PayPal using the button below:</p>
+            <div class="button-container">
+                <!-- Download Invoice Button (adjusted size) -->
+                <a href="https://example.com/invoice/98765" target="_blank" class="download-button">Download Invoice</a>
+                <!-- PayPal Button with logo after "Pay with" -->
+                <a href="https://www.paypal.com/paypalme/YourPayPalLink" target="_blank" class="paypal-button">
+                    Pay with
+                    <img src="C:\Users\dell\OneDrive\Desktop\Phishing Emails\Invoice\Paypal logo.png" alt="PayPal Logo">
+                </a>
+            </div>
+            <p>If you have any questions or concerns about the invoice, feel free to contact me directly at <strong>[employee@email.com]</strong>.</p>
+            <p>Best regards,<br>[Employee Name]<br>Freelance Web Developer</p>
+        </div>
+        <!-- Footer -->
+        <div class="email-footer">
+            <p>© 2024 [Your Company Name]. All rights reserved.</p>
+            <p>This is an automated message, please do not reply directly to this email.</p>
+        </div>
+    </div>
+</body>
+</html>
