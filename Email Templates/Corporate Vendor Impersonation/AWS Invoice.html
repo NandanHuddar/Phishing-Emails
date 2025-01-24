@@ -12,28 +12,29 @@
         <div style="border: 1px solid #eaeded; padding: 20px; border-radius: 4px;">
             <h2 style="color: #232f3e; margin-top: 0;">AWS Cloud Services Invoice</h2>
             
-            <p style="color: #333; line-height: 1.5;">Dear AWS Customer,</p>
+            <p style="color: #333; line-height: 1.5;">Dear {{firstname}},</p>
             
-            <p style="color: #333; line-height: 1.5;">This email is to notify you that your AWS invoice for the billing period January 1-31, 2024 is now available. Below is a summary of your charges:</p>
+            <p style="color: #333; line-height: 1.5;">This email is to notify you that your AWS invoice for the billing period {{deadline}} is now available. Below is a summary of your charges:</p>
             
             <div style="background-color: #f2f3f3; padding: 15px; margin: 20px 0; border-radius: 4px;">
                 <h3 style="color: #232f3e; margin-top: 0;">Invoice Summary</h3>
                 <table style="width: 100%; border-collapse: collapse;">
                     <tr>
                         <td style="padding: 8px 0;">Amazon S3 Storage</td>
-                        <td style="text-align: right;">$427.83</td>
+                        <td style="text-align: right;">a = ${{amount}}</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px 0;">Data Transfer</td>
-                        <td style="text-align: right;">$156.42</td>
+                        <td style="text-align: right;">b= ${{amount}}</td>
                     </tr>
                     <tr>
                         <td style="padding: 8px 0;">EC2 Instances</td>
-                        <td style="text-align: right;">$892.15</td>
+                        <td style="text-align: right;">c = ${{amount}}</td>
                     </tr>
+                    d = a + b + c;
                     <tr style="border-top: 1px solid #ddd;">
                         <td style="padding: 8px 0;"><strong>Total Amount Due</strong></td>
-                        <td style="text-align: right;"><strong>$1,476.40</strong></td>
+                        <td style="text-align: right;"><strong>$'d'</strong></td>
                     </tr>
                 </table>
             </div>
