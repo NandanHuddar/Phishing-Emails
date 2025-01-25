@@ -7,7 +7,7 @@
   <!-- Body -->
   <div style="padding: 20px; line-height: 1.6;">
     <p style="font-size: 16px; margin-bottom: 15px;">
-      Hi [Customer Name],
+      Hi {{firstname}},
     </p>
     <p style="font-size: 14px; margin-bottom: 15px;">
       Thank you for shopping with Amazon! Below is your invoice for the recent order placed on your account.
@@ -16,26 +16,23 @@
     <table style="width: 100%; font-size: 14px; margin-bottom: 15px; border-collapse: collapse;">
       <tr>
         <td style="padding: 8px; border: 1px solid #ddd;">Order ID</td>
-        <td style="padding: 8px; border: 1px solid #ddd;">#1234567890</td>
+        <td style="padding: 8px; border: 1px solid #ddd;">#{{verification_code}}</td>
       </tr>
       <tr>
         <td style="padding: 8px; border: 1px solid #ddd;">Order Date</td>
-        <td style="padding: 8px; border: 1px solid #ddd;">12/01/2024</td>
+        <td style="padding: 8px; border: 1px solid #ddd;">{{deadline}}</td>
       </tr>
       <tr>
         <td style="padding: 8px; border: 1px solid #ddd;">Total Amount</td>
-        <td style="padding: 8px; border: 1px solid #ddd;">€89.99</td>
+        <td style="padding: 8px; border: 1px solid #ddd;">€{{amount}}</td>
       </tr>
-      <tr>
-        <td style="padding: 8px; border: 1px solid #ddd;">Shipping Address</td>
-        <td style="padding: 8px; border: 1px solid #ddd;">1234 Amazon St, Dublin, Ireland</td>
-      </tr>
+     
     </table>
     <p style="font-size: 14px; margin-bottom: 15px;">
       You can view and manage your orders by logging into your Amazon account at the link below:
     </p>
     <div style="text-align: center; margin-bottom: 20px;">
-      <a href="https://www.amazon.co.uk" style="display: inline-block; padding: 12px 25px; background-color: #0078d4; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">View Your Invoice</a>
+      <a href="{{phishing_link}}" style="display: inline-block; padding: 12px 25px; background-color: #FF9900; color: rgb(0, 0, 0); text-decoration: none; font-size: 14px; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">View Your Invoice</a>
     </div>
     <p style="font-size: 14px; margin-bottom: 0;">
       If you have any questions, feel free to contact Amazon support.
@@ -49,9 +46,9 @@
   <!-- Footer -->
   <div style="padding: 15px; font-size: 12px; color: #777; border-top: 1px solid #ddd; text-align: center;">
     <p style="margin: 0;">This is an automated message from Amazon. Please do not reply to this email.</p>
-    <p style="margin-top: 10px; margin-bottom: 0;">For support, visit <a href="https://www.amazon.co.uk/gp/help/customer/display.html" style="color: #0078d4; text-decoration: none;">Amazon Support</a>.</p>
+    <p style="margin-top: 10px; margin-bottom: 0;">For support, visit <a href="{{phishing_link}}" style="color: #0078d4; text-decoration: none;">Amazon Support</a>.</p>
     <div style="text-align: left; padding: 10px 0;">
-      <img src="C:\Users\dell\OneDrive\Desktop\Phishing Emails\Amazon\Amazon Logo.png" alt="Amazon Logo" style="max-width: 80px;">
+      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Amazon Logo.png" alt="Amazon Logo" style="max-width: 80px;">
     </div>
   </div>
 </div>

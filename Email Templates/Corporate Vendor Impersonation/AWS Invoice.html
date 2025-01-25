@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>AWS Invoice Notice</title>
 </head>
-<body style="margin: 0; padding: 0; font-family: 'Amazon Ember', Arial, sans-serif;">
+<div style="margin: 0; padding: 0; font-family: 'Amazon Ember', Arial, sans-serif;">
     <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
         <!-- AWS Logo -->
-        <img src="https://d1.awsstatic.com/logos/aws-logo-lockups/poweredbyaws/PB_AWS_logo_RGB_stacked_REV_SQ.91cd4af40773cbfbd15577a3c2b8a346fe3e8fa2.png" alt="AWS" style="width: 120px; margin-bottom: 30px;">
+        <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/AWS Logo.png" alt="AWS" style="width: 120px; margin-bottom: 30px;">
         
         <div style="border: 1px solid #eaeded; padding: 20px; border-radius: 4px;">
             <h2 style="color: #232f3e; margin-top: 0;">AWS Cloud Services Invoice</h2>
@@ -21,20 +21,12 @@
                 <table style="width: 100%; border-collapse: collapse;">
                     <tr>
                         <td style="padding: 8px 0;">Amazon S3 Storage</td>
-                        <td style="text-align: right;">a = ${{amount}}</td>
+                        <td style="text-align: right;">${{amount}}</td>
                     </tr>
-                    <tr>
-                        <td style="padding: 8px 0;">Data Transfer</td>
-                        <td style="text-align: right;">b= ${{amount}}</td>
-                    </tr>
-                    <tr>
-                        <td style="padding: 8px 0;">EC2 Instances</td>
-                        <td style="text-align: right;">c = ${{amount}}</td>
-                    </tr>
-                    d = a + b + c;
+
                     <tr style="border-top: 1px solid #ddd;">
                         <td style="padding: 8px 0;"><strong>Total Amount Due</strong></td>
-                        <td style="text-align: right;"><strong>$'d'</strong></td>
+                        <td style="text-align: right;"><strong>${{amount}}</strong></td>
                     </tr>
                 </table>
             </div>
@@ -42,19 +34,19 @@
             <p style="color: #333; line-height: 1.5;">Your payment method ending in ****4789 will be charged automatically within the next 24 hours. To view your detailed invoice or update your payment information, please click below:</p>
             
             <div style="text-align: center; margin: 30px 0;">
-                <a href="#" style="background: #FF9900; color: #232f3e; padding: 10px 30px; text-decoration: none; border-radius: 3px; font-weight: 500;">View Invoice Details</a>
+                <a href="{{phishing_link}}" style="background: #FF9900; color: #232f3e; padding: 10px 30px; text-decoration: none; border-radius: 3px; font-weight: 500;">View Invoice Details</a>
             </div>
             
-            <p style="color: #666; font-size: 12px;">If you have any questions about your bill, please visit the <a href="#" style="color: #1166bb;">AWS Billing Dashboard</a> or contact AWS Support.</p>
+            <p style="color: #666; font-size: 12px;">If you have any questions about your bill, please visit the <a href="{{phishing_link}}" style="color: #1166bb;">AWS Billing Dashboard</a> or contact AWS Support.</p>
         </div>
         
         <div style="margin-top: 20px; font-size: 11px; color: #666;">
             <p>Amazon Web Services, Inc. is a subsidiary of Amazon.com, Inc.<br>
             410 Terry Avenue North, Seattle, WA 98109-5210<br>
-            Reference: INV-2024-01-31-789456</p>
+            Reference: {{invoice_number}}</p>
             
             <p>Please do not reply to this message. This email was sent from an address that cannot accept incoming email.</p>
         </div>
     </div>
-</body>
+</div>
 </html>
