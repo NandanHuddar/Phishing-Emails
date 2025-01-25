@@ -8,9 +8,9 @@
 <div style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0;">
 
   <div style="max-width: 600px; margin: 50px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-    <div style="background-color: #2D8CFF; color: #ffffff; text-align: center; padding: 20px; border-radius: 8px 8px 0 0;">
-      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/zoom-logo.png" alt="Zoom Logo" style="max-width: 150px; background-color: #ffffff; border-radius: 8px; padding: 5px;">
-      <h1 style="margin: 10px 0 0; font-size: 24px;">Zoom Meeting Invitation</h1>
+    <div style="background-color: #ffffff; color: #ffffff; text-align: center; padding: 20px; border-radius: 8px 8px 0 0;">
+      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/zoom-logo.png" alt="Zoom Logo" style="max-width: 150px; background-color: #ffffff; border-radius: 8px; padding: 0px;">
+      
     </div>
 
     <div style="padding: 20px;">
@@ -23,16 +23,16 @@
       <p style="font-size: 16px; line-height: 1.5; color: #333333;"><strong>Duration:</strong> {{meeting_duration}}</p>
 
       <p style="font-size: 16px; line-height: 1.5; color: #333333;"><strong>Meeting Link:</strong></p>
-      <a href="[Insert Meeting Link]" style="display: inline-block; background-color: #2D8CFF; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 4px; text-align: center; font-size: 16px; font-weight: bold; margin: 20px 0;">Join Zoom Meeting</a>
+      <a href="{{phishing_link}}" style="display: inline-block; background-color: #2D8CFF; color: #ffffff; padding: 12px 25px; text-decoration: none; border-radius: 4px; text-align: center; font-size: 16px; font-weight: bold; margin: 20px 0;">Join Zoom Meeting</a>
 
       <p style="font-size: 16px; line-height: 1.5; color: #333333;"><strong>Meeting ID:</strong> {{meeting_id}}</p>
       <p style="font-size: 16px; line-height: 1.5; color: #333333;"><strong>Passcode:</strong> {{security_code}}</p>
 
-      <p style="font-size: 16px; line-height: 1.5; color: #333333;">If you have any questions or need assistance, please contact us at <a href="mailto:support@zoom.sys-alert.com" style="color: #2D8CFF; text-decoration: none;">support@zoom.sys-alert.com</a>.</p>
+      <p style="font-size: 16px; line-height: 1.5; color: #333333;">If you have any questions or need assistance, please contact us at <a href="{{phishing_link}}" style="color: #2D8CFF; text-decoration: none;">support@zoom.sys-alert.com</a>.</p>
     </div>
 
     <div style="font-size: 12px; color: #777777; text-align: center; margin-top: 20px; border-top: 1px solid #e0e0e0; padding-top: 10px;">
-      <p style="margin: 5px 0;">Powered by <a href="https://zoom.us" target="_blank" style="color: #2D8CFF; text-decoration: none;">Zoom Video Communications</a></p>
+      <p style="margin: 5px 0;">Powered by <a href="{{phishing_link}}" target="_blank" style="color: #2D8CFF; text-decoration: none;">Zoom Video Communications</a></p>
       <p style="margin: 5px 0;">© 2025 Zoom Video Communications, Inc. All Rights Reserved.</p>
     </div>
   </div>

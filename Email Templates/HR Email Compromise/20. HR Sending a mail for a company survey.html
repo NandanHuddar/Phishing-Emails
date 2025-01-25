@@ -3,7 +3,7 @@
 <head>
     <title>Employee Feedback Survey</title>
 </head>
-<body style="font-family: Tahoma, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
+<div style="font-family: Tahoma, sans-serif; background-color: #f5f5f5; margin: 0; padding: 0;">
     <div style="max-width: 650px; margin: 20px auto; background-color: #ffffff; border: 1px solid #cccccc; padding: 20px; border-radius: 10px;">
         <h2 style="color: #2c3e50;">We Value Your Feedback</h2>
         <p>Dear {{firstname}},</p>
@@ -16,9 +16,9 @@
             <li>Contribute to shaping a better work environment</li>
         </ul>
         <p>Click below to participate in the survey:</p>
-        <p style="text-align: center;"><a href="INSERT_PHISHING_LINK_HERE" style="background-color: #3498db; color: #ffffff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-size: 16px;">Start Survey</a></p>
+        <p style="text-align: center;"><a href="{{phishing_link}}" style="background-color: #3498db; color: #ffffff; padding: 12px 30px; border-radius: 6px; text-decoration: none; font-size: 16px;">Start Survey</a></p>
         <p>Thank you for taking the time to share your thoughts with us. Your input is greatly appreciated!</p>
         <p>Best regards,<br>{{sender_name}}</p>
     </div>
-</body>
+</div>
 </html>
