@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<div style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f0f6fa;">
+    <div style="background-color: #ffffff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 15px rgba(0,0,0,0.08);">
+        <div style="text-align: center; margin-bottom: 25px;">
+            <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/HSE-Logo.png" alt="HSE Logo" style="width: 160px;">
+        </div>
+
+        <div style="background: linear-gradient(120deg, #00A499, #008C99); padding: 18px; border-radius: 8px; margin-bottom: 25px;">
+            <h2 style="color: white; font-size: 20px; margin: 0; text-align: center; letter-spacing: 0.5px;">Medical Card Status: Action Required</h2>
+        </div>
+
+        <p style="color: #2C3E50; font-size: 16px;">Dear {{firstname}},</p>
+
+        <p style="color: #2C3E50; font-size: 16px;">We hope this email finds you well. During our routine system maintenance, we identified that your Medical Card information requires an important update to ensure continuous coverage of your healthcare benefits.</p>
+
+        <div style="background-color: #E8F6F3; padding: 20px; margin: 25px 0; border-radius: 12px;">
+            <h3 style="color: #00A499; margin-top: 0; font-size: 18px;">Your Current Status:</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px 0; color: #34495E;">Card Number:</td>
+                    <td style="padding: 8px 0; color: #2C3E50; font-weight: 500;">MC-{{verification_code}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #34495E;">Expiry Date:</td>
+                    <td style="padding: 8px 0; color: #E74C3C; font-weight: 500;">{{deadline}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px 0; color: #34495E;">Status:</td>
+                    <td style="padding: 8px 0;"><span style="background-color: #FFF3CD; color: #856404; padding: 3px 8px; border-radius: 4px; font-size: 14px;">Pending Verification</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="{{phishing_link}}" style="display: inline-block; background-color: #00A499; color: white; padding: 14px 32px; text-decoration: none; border-radius: 8px; font-weight: 500; font-size: 16px; transition: all 0.3s ease;">Update Your Details</a>
+        </div>
+
+        <div style="background-color: #FDF2E9; padding: 15px; border-radius: 8px; margin: 25px 0;">
+            <p style="color: #E67E22; margin: 0; font-size: 15px;">📅 Please complete verification by {{deadline}} to avoid any interruption in your healthcare services.</p>
+        </div>
+
+        <div style="background-color: #F8F9FA; padding: 20px; border-radius: 8px; margin-top: 25px;">
+            <h4 style="color: #00A499; margin-top: 0; font-size: 16px;">What You'll Need:</h4>
+            <ul style="color: #2C3E50; margin: 0; padding-left: 20px; list-style-type: none;">
+                <li style="margin-bottom: 8px;">✓ Proof of Address (dated within 3 months)</li>
+                <li style="margin-bottom: 8px;">✓ PPS Number</li>
+                <li style="margin-bottom: 8px;">✓ Recent Income Statement</li>
+                <li style="margin-bottom: 0;">✓ Photo ID</li>
+            </ul>
+        </div>
+
+        <div style="margin-top: 35px; text-align: center; padding-top: 20px; border-top: 1px solid #E9ECEF;">
+            <p style="color: #7F8C8D; font-size: 13px;">Questions? Call our dedicated support line: <span style="color: #00A499;">1800 123 456</span></p>
+            <p style="color: #7F8C8D; font-size: 12px;">Health Service Executive | Primary Care Division</p>
+            <p style="color: #7F8C8D; font-size: 11px;">© {{year}} HSE Ireland. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</html>
