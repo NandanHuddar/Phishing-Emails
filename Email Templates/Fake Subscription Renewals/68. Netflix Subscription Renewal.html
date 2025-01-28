@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Netflix Account Notice</title>
+</head>
+<div style="margin: 0; padding: 0; font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, sans-serif;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px 20px; background-color: white;">
+        <!-- Netflix logo -->
+        <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Netflix_Logo.png" alt="Netflix" style="width: 110px; margin-bottom: 0px;">
+        
+        <div style="text-align: left;">
+            <h1 style="font-size: 32px; font-weight: 500; margin: 0 0 30px 0; color: #221f1f;">Your Netflix subscription has been cancelled.</h1>
+            
+            <p style="font-size: 16px; color: #221f1f; margin-bottom: 15px;">Dear {{firstname}},</p>
+            
+            <p style="font-size: 16px; line-height: 1.5; color: #221f1f; margin-bottom: 15px;">Unfortunately, we were unable to process your last payment of €20.99 for your Standard subscription plan. Your bank has declined the transaction.</p>
+            
+            <p style="font-size: 16px; line-height: 1.5; color: #221f1f; margin-bottom: 25px;">Don't worry though - you can easily reactivate your account and continue watching your favourite shows like Father Ted, Normal People, and The Banshees of Inisherin.</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{phishing_link}}" style="background-color: #e50914; color: white; padding: 14px 28px; text-decoration: none; border-radius: 4px; font-size: 16px; font-weight: 500;">REACTIVATE MEMBERSHIP</a>
+            </div>
+            
+            <p style="font-size: 16px; line-height: 1.5; color: #221f1f;">If you need any help, you can:</p>
+            <ul style="font-size: 16px; line-height: 1.5; color: #221f1f;">
+                <li>Visit our <a href="{{phishing_link}}" style="color: #0071eb; text-decoration: none;">Help Centre</a></li>
+                <li>Contact us at 800-585-8131 (toll-free in Ireland)</li>
+            </ul>
+            
+            <p style="font-size: 16px; color: #221f1f; margin-top: 30px;">Go raibh maith agat,<br>The Netflix Team</p>
+        </div>
+        
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e6e6e6; font-size: 12px; color: #737373;">
+            <p>This message was sent to [email] as part of your Netflix membership. To learn more about our privacy practices, please visit our <a href="{{phishing_link}}" style="color: #0071eb; text-decoration: none;">Privacy Statement</a>.</p>
+            
+            <p>Netflix Services Ireland Limited<br>
+            70 Sir John Rogerson's Quay<br>
+            Dublin 2, D02 R296<br>
+            Ireland</p>
+        </div>
+    </div>
+</div>
+</html>
