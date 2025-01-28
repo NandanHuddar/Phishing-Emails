@@ -1,0 +1,50 @@
+<div style="max-width: 600px; margin: 0px auto; background-color: #ffffff; font-family: Arial, sans-serif; color: #333; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <!-- Header -->
+  <div style="padding: 15px 25px; background-color: #ffffff; text-align: left;">
+    <img src="C:\Users\dell\OneDrive\Desktop\Phishing Emails\Electric\EI Logo.png" alt="Electric Ireland Logo" style="height: 45px; display: inline-block;">
+  </div>
+
+  <!-- Body -->
+  <div style="padding: 10px 20px;">
+    <p style="font-size: 16px; line-height: 1.6; margin: 0;">
+      Dear {{firstname}},
+    </p>
+    <p style="font-size: 16px; line-height: 1.6; margin-top: 10px;">
+      We have detected an irregularity with your recent electricity bill payment. To prevent any service interruption, immediate action is required to verify your account details.
+    </p>
+
+    <div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; margin: 25px 0;">
+      <p style="margin: 0; font-size: 15px;">
+        <strong>Account Details:</strong><br>
+        Account Number: ****-****-{{security_code}}<br>
+        Last Bill Amount: €{{amount}}<br>
+        Due Date: Immediate Action Required
+      </p>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+      <a href="{{phishing_link}}" style="display: inline-block; padding: 14px 35px; background-color: #00A896; color: white; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: bold;">
+        Verify Account Now
+      </a>
+    </div>
+
+    <p style="font-size: 16px; line-height: 1.6;">
+      Please note: Failure to verify your account within 24 hours may result in service interruption.
+    </p>
+
+    <p style="font-size: 16px; line-height: 1.6; margin-top: 30px;">
+      Best regards,<br>
+      <strong>Electric Ireland Customer Service Team</strong>
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div style="padding: 20px; background-color: #f8f9fa; border-top: 1px solid #e0e0e0; text-align: center; font-size: 14px; color: #666;">
+    <p style="margin: 0;">Electric Ireland, Swift Square, Northwood, Santry, Dublin 9</p>
+    <p style="margin: 10px 0;">
+      <a href="{{phishing_link}}" style="color: #00A896; text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+      <a href="{{phishing_link}}" style="color: #00A896; text-decoration: none; margin: 0 10px;">Contact Us</a>
+    </p>
+    <p style="margin: 10px 0; font-size: 12px;">This is an automated message. Please do not reply.</p>
+  </div>
+</div>
