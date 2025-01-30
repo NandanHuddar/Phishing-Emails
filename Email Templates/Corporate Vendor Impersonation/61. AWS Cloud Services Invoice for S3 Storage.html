@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>AWS Invoice Notice</title>
+</head>
+<div style="margin: 0; padding: 0; font-family: 'Amazon Ember', Arial, sans-serif;">
+    <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
+        <!-- AWS Logo -->
+        <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/AWS Logo.png" alt="AWS" style="width: 120px; margin-bottom: 30px;">
+        
+        <div style="border: 1px solid #eaeded; padding: 20px; border-radius: 4px;">
+            <h2 style="color: #232f3e; margin-top: 0;">AWS Cloud Services Invoice</h2>
+            
+            <p style="color: #333; line-height: 1.5;">Dear {{firstname}},</p>
+            
+            <p style="color: #333; line-height: 1.5;">This email is to notify you that your AWS invoice for the billing period {{deadline}} is now available. Below is a summary of your charges:</p>
+            
+            <div style="background-color: #f2f3f3; padding: 15px; margin: 20px 0; border-radius: 4px;">
+                <h3 style="color: #232f3e; margin-top: 0;">Invoice Summary</h3>
+                <table style="width: 100%; border-collapse: collapse;">
+                    <tr>
+                        <td style="padding: 8px 0;">Amazon S3 Storage</td>
+                        <td style="text-align: right;">${{amount}}</td>
+                    </tr>
+
+                    <tr style="border-top: 1px solid #ddd;">
+                        <td style="padding: 8px 0;"><strong>Total Amount Due</strong></td>
+                        <td style="text-align: right;"><strong>${{amount}}</strong></td>
+                    </tr>
+                </table>
+            </div>
+            
+            <p style="color: #333; line-height: 1.5;">Your payment method ending in ****{{security_code}} will be charged automatically within the next 24 hours. To view your detailed invoice or update your payment information, please click below:</p>
+            
+            <div style="text-align: center; margin: 30px 0;">
+                <a href="{{phishing_link}}" style="background: #FF9900; color: #232f3e; padding: 10px 30px; text-decoration: none; border-radius: 3px; font-weight: 500;">View Invoice Details</a>
+            </div>
+            
+            <p style="color: #666; font-size: 12px;">If you have any questions about your bill, please visit the <a href="{{phishing_link}}" style="color: #1166bb;">AWS Billing Dashboard</a> or contact AWS Support.</p>
+        </div>
+        
+        <div style="margin-top: 20px; font-size: 11px; color: #666;">
+            <p>Amazon Web Services, Inc. is a subsidiary of Amazon.com, Inc.<br>
+            410 Terry Avenue North, Seattle, WA 98109-5210<br>
+            Reference: {{invoice_number}}</p>
+            
+            <p>Please do not reply to this message. This email was sent from an address that cannot accept incoming email.</p>
+        </div>
+    </div>
+</div>
+</html>
