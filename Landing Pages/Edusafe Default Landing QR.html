@@ -2,103 +2,161 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Security Alert - EduSafe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: #f4f4f4;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .left-section {
+            flex: 1;
+            background-color: #2c3e50;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-section img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+        }
+
+        .right-section {
+            flex: 1;
+            padding: 20px;
+            background-color: #ecf0f1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .alert-box {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-left: 5px solid;
+            font-size: 14px;
+        }
+
+        .alert-box p {
+            margin: 5px 0;
+        }
+
+        .red { border-color: #e74c3c; background: #f9c2c2; }
+        .yellow { border-color: #f1c40f; background: #fef9c3; }
+        .blue { border-color: #3498db; background: #d1ecf1; }
+        .green { border-color: #2ecc71; background: #c8e6c9; }
+
+        footer {
+            background-color: #333;
+            text-align: center;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 12px;
+        }
+    </style>
 </head>
-<body style="font-family: 'Helvetica Neue', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
-    <div style="display: flex; height: 90vh;">
-        <!-- Left Section (QR Code Image) -->
-        <div style="flex: 0.5; background-color: #2c3e50; display: flex; align-items: center; justify-content: center;">
-            <img src="C:\Users\dell\OneDrive\Desktop\qr_code.jpg" alt="QR Code Alert" style="width: 90%; height: auto; object-fit: cover;">
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="C:/Users/dell/OneDrive/Desktop/qr_code.jpg" alt="QR Code Alert">
         </div>
+        <div class="right-section">
+          <div style="justify-content: left; height: 100px; width: 300px;">
+            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1356.92 230.35">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #f37053;
+                    }
+              
+                    .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+                      stroke-width: 0px;
+                    }
+              
+                    .cls-2 {
+                      fill: #636466;
+                    }
+              
+                    .cls-3 {
+                      fill: #9d9fa2;
+                    }
+              
+                    .cls-4 {
+                      fill: #b91d2b;
+                    }
+              
+                    .cls-5 {
+                      fill: #ed1c24;
+                    }
+              
+                    .cls-6 {
+                      fill: #231f20;
+                    }
+                  </style>
+                </defs>
+                <g>
+                  <polygon class="cls-4" points="172.03 100.67 107.58 100.67 141.67 43.68 172.03 100.67"/>
+                  <polygon class="cls-6" points="154.75 129.6 89.97 129.56 123.32 186.92 154.75 129.6"/>
+                  <polygon class="cls-1" points="172.03 100.67 215.17 28.76 198.66 0 65.5 0 99.06 56.99 107.58 43.68 141.67 43.68 172.03 100.67"/>
+                  <polygon class="cls-3" points="89.97 129.56 49.67 201.59 66.18 230.35 199.35 230.35 165.79 173.36 157.27 186.68 123.18 186.68 89.97 129.56"/>
+                  <polygon class="cls-2" points="165.93 173.38 232.75 59.66 264.71 115.59 199.49 230.37 165.93 173.38"/>
+                  <polygon class="cls-5" points="0 116.09 65.5 0 100.42 54.7 31.94 170.26 0 116.09"/>
+                </g>
+                <g>
+                  <path class="cls-6" d="M402.01,131.74h-61.4v31.49h68.62v37.38h-114.37V29.8h110.82v37.38h-65.07v27.56h61.4v37Z"/>
+                  <path class="cls-6" d="M434.74,32.14c14.51-2.35,34.09-3.68,54.3-3.68,32.76,0,53.29,5.32,70.27,16.98,18.82,12.99,30.92,34.28,30.92,65.64,0,34.79-13.18,57.41-29.84,70.39-18.75,14.57-46.76,21.04-80.15,21.04-21.92,0-36.75-1.46-45.49-2.79V32.14ZM480.42,166.47c2.41.51,6.59.51,9.69.51,29.65.38,51.58-15.91,51.58-54.43,0-33.39-19.89-49.1-47.33-49.1-7.16,0-11.6.57-13.94,1.14v101.88Z"/>
+                  <path class="cls-6" d="M660.08,29.8v96.94c0,25.79,8.93,40.36,27.05,40.36s27.05-13.24,27.05-40.36V29.8h45.75v94.22c0,52.78-26.23,79.39-74.26,79.39s-71.34-25.66-71.34-80.47V29.8h45.74Z"/>
+                  <path class="cls-5" d="M794.3,155.12c10.39,5.2,27.18,10.58,44.29,10.58,15.65,0,23.38-5.45,23.38-14.07,0-8.17-7.66-12.99-26.99-19.58-28.76-10.2-47.96-26.11-47.96-51.51,0-30.22,25.47-53.41,68.62-53.41,20.4,0,34.98,3.8,46.19,8.74l-9.57,36.56c-7.35-3.23-20.02-8.11-37.13-8.11-13.93,0-21.6,5.13-21.6,12.61,0,8.68,9.06,12.17,30.6,20.21,30.8,11.28,44.54,27.75,44.54,51.51,0,29.53-22.93,54.62-72.8,54.62-20.59,0-40.55-5.38-50.24-10.39l8.68-37.76Z"/>
+                  <path class="cls-5" d="M978.15,161.02l-9.63,39.6h-47.33l49.55-170.82h60.96l50.94,170.82h-49.42l-10.9-39.6h-44.16ZM1016.04,127.24l-7.92-30.73c-2.59-9.63-5.83-23.57-8.49-33.65h-.51c-2.53,10.07-5.07,24.14-7.54,33.83l-7.35,30.54h31.8Z"/>
+                  <path class="cls-5" d="M1104.46,29.8h109.68v37.38h-63.93v31.49h60.13v37h-60.13v64.94h-45.75V29.8Z"/>
+                  <path class="cls-5" d="M1349.7,131.74h-61.39v31.49h68.61v37.38h-114.36V29.8h110.82v37.38h-65.07v27.56h61.39v37Z"/>
+                </g>
+              </svg>
 
-        <!-- Right Section (Information) -->
-        <div style="flex: 0.5; padding: 15px; background-color: #ecf0f1; display: flex; flex-direction: column; justify-content: flex-start;">
-            <div style="margin-bottom: 5px;">
-                <div style="justify-content: left; height: 80px; width: 250px;">
-                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1356.92 230.35">
-                        <defs>
-                          <style>
-                            .cls-1 {
-                              fill: #f37053;
-                            }
-                      
-                            .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
-                              stroke-width: 0px;
-                            }
-                      
-                            .cls-2 {
-                              fill: #636466;
-                            }
-                      
-                            .cls-3 {
-                              fill: #9d9fa2;
-                            }
-                      
-                            .cls-4 {
-                              fill: #b91d2b;
-                            }
-                      
-                            .cls-5 {
-                              fill: #ed1c24;
-                            }
-                      
-                            .cls-6 {
-                              fill: #231f20;
-                            }
-                          </style>
-                        </defs>
-                        <g>
-                          <polygon class="cls-4" points="172.03 100.67 107.58 100.67 141.67 43.68 172.03 100.67"/>
-                          <polygon class="cls-6" points="154.75 129.6 89.97 129.56 123.32 186.92 154.75 129.6"/>
-                          <polygon class="cls-1" points="172.03 100.67 215.17 28.76 198.66 0 65.5 0 99.06 56.99 107.58 43.68 141.67 43.68 172.03 100.67"/>
-                          <polygon class="cls-3" points="89.97 129.56 49.67 201.59 66.18 230.35 199.35 230.35 165.79 173.36 157.27 186.68 123.18 186.68 89.97 129.56"/>
-                          <polygon class="cls-2" points="165.93 173.38 232.75 59.66 264.71 115.59 199.49 230.37 165.93 173.38"/>
-                          <polygon class="cls-5" points="0 116.09 65.5 0 100.42 54.7 31.94 170.26 0 116.09"/>
-                        </g>
-                        <g>
-                          <path class="cls-6" d="M402.01,131.74h-61.4v31.49h68.62v37.38h-114.37V29.8h110.82v37.38h-65.07v27.56h61.4v37Z"/>
-                          <path class="cls-6" d="M434.74,32.14c14.51-2.35,34.09-3.68,54.3-3.68,32.76,0,53.29,5.32,70.27,16.98,18.82,12.99,30.92,34.28,30.92,65.64,0,34.79-13.18,57.41-29.84,70.39-18.75,14.57-46.76,21.04-80.15,21.04-21.92,0-36.75-1.46-45.49-2.79V32.14ZM480.42,166.47c2.41.51,6.59.51,9.69.51,29.65.38,51.58-15.91,51.58-54.43,0-33.39-19.89-49.1-47.33-49.1-7.16,0-11.6.57-13.94,1.14v101.88Z"/>
-                          <path class="cls-6" d="M660.08,29.8v96.94c0,25.79,8.93,40.36,27.05,40.36s27.05-13.24,27.05-40.36V29.8h45.75v94.22c0,52.78-26.23,79.39-74.26,79.39s-71.34-25.66-71.34-80.47V29.8h45.74Z"/>
-                          <path class="cls-5" d="M794.3,155.12c10.39,5.2,27.18,10.58,44.29,10.58,15.65,0,23.38-5.45,23.38-14.07,0-8.17-7.66-12.99-26.99-19.58-28.76-10.2-47.96-26.11-47.96-51.51,0-30.22,25.47-53.41,68.62-53.41,20.4,0,34.98,3.8,46.19,8.74l-9.57,36.56c-7.35-3.23-20.02-8.11-37.13-8.11-13.93,0-21.6,5.13-21.6,12.61,0,8.68,9.06,12.17,30.6,20.21,30.8,11.28,44.54,27.75,44.54,51.51,0,29.53-22.93,54.62-72.8,54.62-20.59,0-40.55-5.38-50.24-10.39l8.68-37.76Z"/>
-                          <path class="cls-5" d="M978.15,161.02l-9.63,39.6h-47.33l49.55-170.82h60.96l50.94,170.82h-49.42l-10.9-39.6h-44.16ZM1016.04,127.24l-7.92-30.73c-2.59-9.63-5.83-23.57-8.49-33.65h-.51c-2.53,10.07-5.07,24.14-7.54,33.83l-7.35,30.54h31.8Z"/>
-                          <path class="cls-5" d="M1104.46,29.8h109.68v37.38h-63.93v31.49h60.13v37h-60.13v64.94h-45.75V29.8Z"/>
-                          <path class="cls-5" d="M1349.7,131.74h-61.39v31.49h68.61v37.38h-114.36V29.8h110.82v37.38h-65.07v27.56h61.39v37Z"/>
-                        </g>
-                      </svg>
-    
-                </div>
-                <!-- <img src="" alt="EduSafe Logo" style="max-width: 180px; margin-bottom: 10px;"> -->
-                <?xml version="1.0" encoding="UTF-8"?>
-            </div>
-            <h1 style="color: #34495e; font-size: 1.3rem;">⚠️ QR Code Security Alert</h1>
-            <p style="color: #7f8c8d; font-size: 12px;">🚨 If you encounter suspicious QR codes, please report them to your IT team. Stay vigilant—YOU are the first line of defense!</p>
+        </div>
+        <!-- <img src="" alt="EduSafe Logo" style="max-width: 180px; margin-bottom: 20px;"> -->
+        <?xml version="1.0" encoding="UTF-8"?>
+            <h1 style="color: #34495e; font-size: 1.5rem;">⚠️ QR Code Security Alert</h1>
             
-            <div style="margin-bottom: 10px; padding: 10px; border-left: 5px solid #e74c3c; background: #f9c2c2;">
-                <p><strong style="color: #e74c3c;">📸 1. Verify Before Scanning:</strong></p>
-                <p style="color: #444; font-size: 12px;">Always check for signs of tampering or unusual placements of QR codes before scanning.</p>
+            <div class="alert-box red">
+                <p><strong>📸 1. Verify Before Scanning:</strong></p>
+                <p>Always check for signs of tampering or unusual placements of QR codes before scanning.</p>
             </div>
 
-            <div style="margin-bottom: 10px; padding: 10px; border-left: 5px solid #f1c40f; background: #fef9c3;">
-                <p><strong style="color: #f1c40f;">🔗 2. Avoid Shortened URLs:</strong></p>
-                <p style="color: #444; font-size: 12px;">Be cautious, as cybercriminals often use QR codes to conceal malicious links. Consider using a URL preview tool before opening any links.</p>
+            <div class="alert-box yellow">
+                <p><strong>🔗 2. Avoid Shortened URLs:</strong></p>
+                <p>Be cautious, as cybercriminals often use QR codes to conceal malicious links. Consider using a URL preview tool before opening any links.</p>
             </div>
 
-            <div style="margin-bottom: 10px; padding: 10px; border-left: 5px solid #3498db; background: #d1ecf1;">
-                <p><strong style="color: #3498db;">🔒 3. Don’t Share Sensitive Info:</strong></p>
-                <p style="color: #444; font-size: 12px;">Remember, legitimate services will never ask for your login credentials or financial details through QR codes.</p>
+            <div class="alert-box blue">
+                <p><strong>🔒 3. Don’t Share Sensitive Info:</strong></p>
+                <p>Remember, legitimate services will never ask for your login credentials or financial details through QR codes.</p>
             </div>
 
-            <div style="margin-bottom: 10px; padding: 10px; border-left: 5px solid #2ecc71; background: #c8e6c9;">
-                <p><strong style="color: #2ecc71;">🎓 4. You Are Enrolled in an EduSafe Course:</strong></p>
-                <p style="color: #444; font-size: 12px;">Congratulations! You are taking proactive steps to understand and mitigate cyber threats effectively.</p>
+            <div class="alert-box green">
+                <p><strong>🎓 4. You Are Enrolled in an EduSafe Course:</strong></p>
+                <p>Congratulations! You are taking proactive steps to understand and mitigate cyber threats effectively.</p>
             </div>
-
-            <p style="margin-top: 20px; font-size: 12px; color: #7f8c8d;"></p>
         </div>
     </div>
-
-    <!-- Footer Section -->
-    <footer style="background-color: #333; text-align: center; padding: 20px; font-size: 12px; color: #ffffff;">
+    <footer>
         <p>This message is from <strong>EduSafe.ie</strong> to raise awareness about QR code-based cyber threats. Stay secure.</p>
     </footer>
 </body>
