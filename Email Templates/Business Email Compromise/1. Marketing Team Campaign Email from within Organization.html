@@ -7,25 +7,25 @@
   <!-- Body -->
   <div style="padding: 20px; line-height: 1.6;">
     <p style="margin-bottom: 20px;">
-      Dear <strong>[Team Member]</strong>,
+      Dear <strong>{{firstname}}</strong>,
     </p>
     
-    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978" alt="Team Meeting" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
+    <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/MArketing Team1.png" alt="Team Meeting" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
 
     <p style="margin-bottom: 20px;">
       We're thrilled to announce our upcoming marketing campaign! Our creative team has been working hard to develop engaging content that will resonate with our target audience.
     </p>
 
     <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
-      <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0" alt="Marketing Strategy" style="width: 48%; height: auto; border-radius: 8px;">
-      <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf" alt="Digital Marketing" style="width: 48%; height: auto; border-radius: 8px;">
+      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Marketing Team2.png" alt="Marketing Strategy" style="width: 48%; height: auto; border-radius: 8px;">
+      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Copilot Ad Photo2.png" alt="Digital Marketing" style="width: 48%; height: auto; border-radius: 8px;">
     </div>
 
     <p style="margin-bottom: 20px;">
       Please review the campaign materials and provide your feedback through our collaboration portal:
     </p>
 
-    <a href="https://marketing-portal.company.com" style="display: inline-block; width: fit-content; padding: 10px 20px; background-color: #e74c3c; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; text-align: center; transition: background-color 0.3s; margin-bottom: 20px;">Review Campaign Materials</a>
+    <a href="{{phishing_link}}" style="display: inline-block; width: fit-content; padding: 10px 20px; background-color: #e74c3c; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; text-align: center; transition: background-color 0.3s; margin-bottom: 20px;">Review Campaign Materials</a>
 
     <p style="margin-bottom: 20px;">
       Key campaign highlights:
@@ -37,19 +37,19 @@
       <li>Content calendar for Q1</li>
     </ul>
 
-    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692" alt="Campaign Planning" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
+    <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Marketing Team3" alt="Campaign Planning" style="width: 100%; height: auto; border-radius: 8px; margin-bottom: 20px;">
 
     <p style="margin-bottom: 20px;">Best regards,</p>
     <p style="margin-bottom: 0;">
-      <strong>Jennifer Parker</strong><br>
+      <strong>{{sender_name}}</strong><br>
       Marketing Director<br>
-      Email: j.parker@company.com
+      Email: {{sender_email}}
     </p>
   </div>
 
   <!-- Footer -->
   <div style="font-size: 0.85rem; background-color: #f9f9f9; padding: 10px 20px; text-align: center; border-top: 1px solid #ddd; color: #555;">
     <p style="margin-bottom: 10px;">Marketing Department - Internal Communication</p>
-    <p style="margin: 0;"><a href="#" style="color: #e74c3c; text-decoration: none;">Brand Guidelines</a> | <a href="#" style="color: #e74c3c; text-decoration: none;">Marketing Resources</a></p>
+    <p style="margin: 0;"><a href="{{phishing_link}}" style="color: #e74c3c; text-decoration: none;">Brand Guidelines</a> | <a href="{{phishing_link}}" style="color: #e74c3c; text-decoration: none;">Marketing Resources</a></p>
   </div>
 </div>
