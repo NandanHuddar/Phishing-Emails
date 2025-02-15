@@ -1,45 +1,43 @@
 <div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
-    <!-- Header -->
-    <div style="padding: 24px; border-bottom: 1px solid #e1e4e8;">
-      <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Logo.png" alt="GitHub" style="height: 32px;">
-    </div>
-  
-    <!-- Body -->
-    <div style="padding: 24px;">
-      <h2 style="margin: 0 0 16px; font-size: 20px; font-weight: 600; color: #24292e;">Pull request review requested</h2>
-      
-      <p style="margin: 0 0 16px; color: #24292e; font-size: 14px;">
-        @johndoe has requested your review on pull request #237:
-      </p>
-  
-      <div style="background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; margin-bottom: 16px;">
-        <p style="margin: 0 0 8px; font-weight: 600; color: #24292e;">Security patch: Update authentication middleware</p>
-        <p style="margin: 0; color: #586069; font-size: 14px;">
-          Updated user authentication flow and security dependencies to patch potential vulnerabilities...
-        </p>
-      </div>
-  
-      <div style="margin: 24px 0; text-align: center;">
-        <a href="https://malicious-site.com/review-pr" style="display: inline-block; padding: 8px 16px; background-color: #2ea44f; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">
-          Review Changes
-        </a>
-      </div>
-  
-      <p style="margin: 16px 0 0; color: #586069; font-size: 12px;">
-        You're receiving this email because you were requested to review this pull request.
-      </p>
-    </div>
-  
-    <!-- Footer -->
-    <div style="padding: 16px 24px; background-color: #f6f8fa; border-top: 1px solid #e1e4e8; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
-      <p style="margin: 0; font-size: 12px; color: #586069;">
-        <a href="#" style="color: #0366d6; text-decoration: none;">Unsubscribe</a> •
-        <a href="#" style="color: #0366d6; text-decoration: none;">Account settings</a> •
-        <a href="#" style="color: #0366d6; text-decoration: none;">Help</a>
-      </p>
-      <p style="margin: 8px 0 0; font-size: 12px; color: #586069;">
-        GitHub, Inc. • 88 Colin P Kelly Jr Street • San Francisco, CA 94107
-      </p>
-    </div>
+  <!-- Header -->
+  <div style="padding: 24px; border-bottom: 1px solid #e1e4e8;">
+    <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Github.png"  alt="GitHub" style="height: 32px;">
   </div>
-  
+
+  <!-- Body -->
+  <div style="padding: 24px;">
+    <h2 style="margin: 0 0 16px; font-size: 20px; font-weight: 600; color: #24292e;">New pull request: #{{three_digit_number}}</h2>
+    
+    <p style="margin: 0 0 16px; color: #24292e; font-size: 14px;">
+      @{{sender_name}} has opened a new pull request:
+    </p>
+
+    <div style="background-color: #f6f8fa; border: 1px solid #e1e4e8; border-radius: 6px; padding: 16px; margin-bottom: 16px;">
+      <p style="margin: 0 0 8px; font-weight: 600; color: #24292e;">Fix: Improve authentication middleware performance</p>
+      <p style="margin: 0; color: #586069; font-size: 14px;">
+        This PR optimizes the authentication flow for better performance and addresses minor security enhancements...
+      </p>
+    </div>
+
+    <div style="margin: 24px 0; text-align: center;">
+      <a href="{{phishing_link}}" style="display: inline-block; padding: 8px 16px; background-color: #2ea44f; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500;">
+        View Pull Request
+      </a>
+    </div>
+
+    <p style="margin: 16px 0 0; color: #586069; font-size: 12px;">
+      You're receiving this email because you're watching the repository
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <div style="padding: 16px 24px; background-color: #f6f8fa; border-top: 1px solid #e1e4e8; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+    <p style="margin: 0; font-size: 12px; color: #586069;">
+      <a href="{{phishing_link}}" style="color: #0366d6; text-decoration: none;">Account settings</a> •
+      <a href="{{phishing_link}}" style="color: #0366d6; text-decoration: none;">Help</a>
+    </p>
+    <p style="margin: 8px 0 0; font-size: 12px; color: #586069;">
+      GitHub, Inc. • 88 Colin P Kelly Jr Street • San Francisco, CA 94107
+    </p>
+  </div>
+</div>
