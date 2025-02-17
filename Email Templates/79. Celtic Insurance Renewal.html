@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance Policy Renewal</title>
 </head>
-<body style="font-family: Arial, sans-serif; background-color: #f7f7f7; color: #333333; margin: 0; padding: 0;">
+<div style="font-family: Arial, sans-serif; background-color: #f7f7f7; color: #333333; margin: 0; padding: 0;">
     <div style="max-width: 600px; background-color: #ffffff; border-radius: 8px; margin: 20px auto; padding: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <div style="background-color: #1abc9c; color: white; padding: 15px; border-radius: 8px 8px 0 0; text-align: center;">
             <h2 style="margin: 0; font-size: 24px;">Policy Renewal Reminder from Celtic Insurance</h2>
         </div>
         <div style="padding: 20px; font-size: 16px; line-height: 1.6;">
-            <p style="margin: 10px 0;">Dear [First Name],</p>
+            <p style="margin: 10px 0;">Dear {{firstname}},</p>
 
             <p style="margin: 10px 0;">I hope this message finds you well. Your [Insurance Policy Name] policy – [Policy Number] is up for renewal in [Number of days/weeks]. As your trusted advisor at Celtic Insurance, I want to ensure that your coverage continues to provide the protection you deserve.</p>
 
             <p style="margin: 10px 0;">Renewing your policy is simple! Just follow the link below to renew online:</p>
             <p style="text-align: center; margin: 20px 0;">
-                <a href="https://www.celticinsurance.com/renew" style="color: #1abc9c; text-decoration: none; font-weight: bold;">https://www.celticinsurance.com/renew</a>
+                <a href="{{phishing_link}}" style="color: #1abc9c; text-decoration: none; font-weight: bold;">https://www.celticinsurance.com/renew</a>
             </p>
 
             <p style="margin: 10px 0;">If you prefer, feel free to contact me directly at [Your Phone Number], and I’ll be happy to assist you with the renewal process.</p>
@@ -25,12 +25,12 @@
             <p style="margin: 10px 0;">If you have any questions or concerns, please don’t hesitate to reach out. We’re here to help you protect what matters most.</p>
 
             <p style="margin: 10px 0;">Kind regards,</p>
-            <p style="margin: 10px 0;">[Your Name]<br>[Your Job Title]<br>Celtic Insurance</p>
+            <p style="margin: 10px 0;">{{sender_name}}<br>Celtic Insurance</p>
         </div>
         <div style="font-size: 14px; color: #777777; text-align: center; margin-top: 30px;">
-            <p style="margin: 5px 0;">For further assistance or if you'd like to review your coverage in more detail, visit our website at <a href="https://www.celticinsurance.com" style="color: #1abc9c; text-decoration: none;">https://www.celticinsurance.com</a>.</p>
+            <p style="margin: 5px 0;">For further assistance or if you'd like to review your coverage in more detail, visit our website at <a href="{{phishing_link}}" style="color: #1abc9c; text-decoration: none;">https://www.celticinsurance.com</a>.</p>
             <p style="margin: 5px 0;">&copy; 2025 Celtic Insurance | All Rights Reserved</p>
         </div>
     </div>
-</body>
+</div>
 </html>

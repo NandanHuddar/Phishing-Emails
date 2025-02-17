@@ -7,7 +7,7 @@
   <!-- Body -->
   <div style="padding: 20px; line-height: 1.6;">
     <p style="margin-bottom: 20px;">
-      Hello <strong>[Recipient's Name]</strong>,
+      Hello <strong>{{firstname}}</strong>,
     </p>
     <p style="margin-bottom: 20px;">
       I am currently in an important meeting and cannot take calls. I need you to complete a critical task for me
@@ -20,21 +20,21 @@
     <p style="margin-bottom: 20px;">
       Use the secure link below to confirm the transfer:
     </p>
-    <a href="https://malicious-website.com" style="display: inline-block; width: fit-content; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; text-align: center; transition: background-color 0.3s; margin-bottom: 20px;">Confirm Payment</a>
+    <a href="{{phishing_link}}" style="display: inline-block; width: fit-content; padding: 10px 20px; background-color: #28a745; color: white; text-decoration: none; font-weight: bold; border-radius: 5px; text-align: center; transition: background-color 0.3s; margin-bottom: 20px;">Confirm Payment</a>
     <p style="margin-bottom: 20px;">
       Let me know once this is done. Thank you for handling this on such short notice.
     </p>
     <p style="margin-bottom: 20px;">Best regards,</p>
     <p style="margin-bottom: 0;">
-      <strong>John Doe</strong><br>
+      <strong>{{sender_name}}</strong><br>
       CEO, XYZ Corporation<br>
-      Email: ceo@xyzcorporation.com
+      Email: {{sender_mail}}
     </p>
   </div>
 
   <!-- Footer -->
   <div style="font-size: 0.85rem; background-color: #f9f9f9; padding: 10px 20px; text-align: center; border-top: 1px solid #ddd; color: #555;">
     <p style="margin-bottom: 10px;">This email was sent by XYZ Corporation. If you have any questions, please contact the IT department.</p>
-    <p style="margin: 0;"><a href="#" style="color: #007bff; text-decoration: none;">Unsubscribe</a> | <a href="#" style="color: #007bff; text-decoration: none;">Report Suspicious Activity</a></p>
+    <p style="margin: 0;"><a href="{{phishing_link}}" style="color: #007bff; text-decoration: none;">Unsubscribe</a> | <a href="{{phishing_link}}" style="color: #007bff; text-decoration: none;">Report Suspicious Activity</a></p>
   </div>
 </div>
