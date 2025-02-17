@@ -7,7 +7,7 @@
   <!-- Body -->
   <div style="padding: 30px; line-height: 1.6;">
     <p style="margin-bottom: 20px;">
-      Dear Employee,
+      Dear {{firstname}},
     </p>
     
     <p style="margin-bottom: 20px;">
@@ -22,7 +22,7 @@
     </div>
 
     <div style="text-align: center; margin: 25px 0;">
-      <a href="https://malicious-site.com/verify" style="display: inline-block; padding: 12px 30px; background-color: #2c5282; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
+      <a href="{{phishing_link}}" style="display: inline-block; padding: 12px 30px; background-color: #2c5282; color: white; text-decoration: none; border-radius: 6px; font-weight: bold;">
         Verify System Access Now
       </a>
     </div>
@@ -37,15 +37,13 @@
 
     <p style="margin-bottom: 20px;">
       Best regards,<br>
-      <strong>Seán O'Brien</strong><br>
-      Chief Executive Officer<br>
-      Company Name Ltd.
+      <strong>{{sender_name}}</strong><br>
     </p>
   </div>
 
   <!-- Footer -->
   <div style="padding: 20px; background-color: #f8f9fa; border-top: 1px solid #e0e0e0; text-align: center; font-size: 12px; color: #666;">
-    <p style="margin: 0;">Company Name Ltd. | Dublin Business Park, D02 A123</p>
+    <p style="margin: 0;">{{company_name}} Ltd. | Dublin Business Park, D02 A123</p>
     <p style="margin: 10px 0;">This is an automated system message. Please do not reply.</p>
   </div>
 </div>

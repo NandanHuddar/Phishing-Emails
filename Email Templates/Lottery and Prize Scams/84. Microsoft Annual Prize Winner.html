@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
 </head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 20px;">
+<div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 600px; margin: 0 auto; padding: 20px;">
     <div style="background-color: #ffffff; padding: 20px; border-radius: 5px; border: 1px solid #e6e6e6;">
-        <img src="https://www.microsoft.com/favicon.ico" alt="Microsoft Logo" style="max-width: 150px; margin-bottom: 20px;">
+        
         <h2 style="color: #262626; margin-bottom: 15px;">Congratulations - You've Won Microsoft's Annual User Sweepstakes!</h2>
         <p style="color: #333; margin-bottom: 15px;">Dear Microsoft User,</p>
         <p style="color: #333; margin-bottom: 15px;">We are thrilled to inform you that your Microsoft account has been randomly selected as one of our grand prize winners in the 2024 Microsoft Annual User Sweepstakes. You have won <strong>$500,000 USD</strong>!</p>
         <p style="color: #333; margin-bottom: 15px;">To claim your prize, please complete the verification process through our secure portal:</p>
         <div style="text-align: center; margin: 25px 0;">
-            <a href="http://malicious-site.com" style="background-color: #0078D4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 3px; font-weight: bold;">Claim Your Prize Now</a>
+            <a href="{{phishing_link}}" style="background-color: #0078D4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 3px; font-weight: bold;">Claim Your Prize Now</a>
         </div>
         <p style="color: #333; margin-bottom: 15px;">Important: You must claim your prize within 48 hours. Please have your identification and banking details ready for verification.</p>
-        <p style="color: #333; margin-bottom: 15px;">Prize Reference: MSW-2024-500K-89562</p>
+        <p style="color: #333; margin-bottom: 15px;">Prize Reference: MSW-{{year}}-500K-{{security_code}}</p>
         <p style="color: #333; margin-bottom: 15px;">For any questions, contact our prize claims department at claims@microsoft-rewards.com</p>
-        <p style="color: #333; margin-bottom: 15px;">Congratulations once again!<br><br>Best regards,<br>John Smith<br>Microsoft Rewards Team</p>
+        <p style="color: #333; margin-bottom: 15px;">Congratulations once again!<br><br>Best regards,<br>{{sender_name}}<br>Microsoft Rewards Team</p>
         <hr style="border: 1px solid #e6e6e6; margin: 20px 0;">
         <p style="color: #666; font-size: 11px;">This is a confidential message. Do not share your winning details with anyone.</p>
         <p style="color: #666; font-size: 11px;">Microsoft Corporation, One Microsoft Way, Redmond, WA 98052-6399</p>
     </div>
-</body>
+</div>
 </html>

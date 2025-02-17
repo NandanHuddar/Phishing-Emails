@@ -7,7 +7,7 @@
   <!-- Body -->
   <div style="padding: 20px; line-height: 1.6;">
     <p style="font-size: 16px; margin-bottom: 15px;">
-      Hi [Employee Name],
+      Hi {{firstname}},
     </p>
     <p style="font-size: 14px; margin-bottom: 15px;">
       You have missed some activities in Microsoft Teams. Here's a summary:
@@ -15,13 +15,13 @@
     <ul style="font-size: 14px; margin-left: 20px; margin-bottom: 15px;">
       <li><strong>Messages:</strong> 3 new messages in the 'Project Updates' channel.</li>
       <li><strong>Mentions:</strong> 2 mentions in the 'Marketing Team' chat.</li>
-      <li><strong>Missed Calls:</strong> 1 missed call from [Colleague Name].</li>
+      <li><strong>Missed Calls:</strong> 1 missed call from {{sender_name}}.</li>
     </ul>
     <p style="font-size: 14px; margin-bottom: 15px;">
       To view these activities, click the link below:
     </p>
     <div style="text-align: center; margin-bottom: 20px;">
-      <a href="https://teams.microsoft.com" style="display: inline-block; padding: 12px 25px; background-color: #0078d4; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">View Activities</a>
+      <a href="{{phishing_link}}" style="display: inline-block; padding: 12px 25px; background-color: #0078d4; color: white; text-decoration: none; font-size: 14px; font-weight: bold; border-radius: 5px; transition: background-color 0.3s;">View Activities</a>
     </div>
     <p style="font-size: 14px; margin-bottom: 0;">
       Best regards,<br>
@@ -32,10 +32,10 @@
   <!-- Footer -->
   <div style="padding: 15px; font-size: 12px; color: #777; border-top: 1px solid #ddd; text-align: center;">
     <p style="margin: 0;">This is an automated message from Microsoft Teams. Please do not reply to this email.</p>
-    <p style="margin-top: 10px; margin-bottom: 0;">For support, visit <a href="https://support.microsoft.com" style="color: #0078d4; text-decoration: none;">Microsoft Support</a>.</p>
+    <p style="margin-top: 10px; margin-bottom: 0;">For support, visit <a href="{{phishing_link}}" style="color: #0078d4; text-decoration: none;">Microsoft Support</a>.</p>
     <div style="text-align: center; padding: 10px 0;">
       <!-- Microsoft logo at a more realistic size -->
-      <img src="C:\Users\dell\OneDrive\Desktop\Phishing Emails\Microsoft\Microsoft Logo.png" alt="Microsoft Logo" style="max-width: 150px;">
+      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Microsoft Logo.png" alt="Microsoft Logo" style="max-width: 150px;">
     </div>
   </div>
 </div>
