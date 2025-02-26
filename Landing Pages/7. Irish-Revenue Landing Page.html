@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myAccount Sign In</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #ffffff;">
+    <div style="background-color: #1f4d6d; color: white; padding: 10px; text-align: center; font-size: 18px;">
+        Revenue
+    </div>
+    
+    <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 20px;">
+        <div style="width: 45%; padding: 20px; background-color: #f5f5f5; border-radius: 5px;">
+            <p style="color: #333; font-size: 14px;">
+                If you have a verified MyGovID account, you can use your MyGovID details to sign in
+            </p>
+            <button style="background-color: #1f4d6d; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                Login with MyGovID
+            </button>
+            <p style="color: #666; font-size: 12px; margin-top: 10px;">
+                <a href="#" style="color: #1f4d6d; text-decoration: none;">What is MyGovID?</a>
+            </p>
+        </div>
+
+        <div style="width: 45%; padding: 20px;">
+            <h2 style="color: #1f4d6d; font-size: 24px; margin-bottom: 20px;">Sign In</h2>
+            
+            <form style="display: flex; flex-direction: column; gap: 15px;">
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #333;">PPS Number</label>
+                    <input type="text" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Date of Birth</label>
+                    <input type="number" style="width: 30%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-right: 5px;" placeholder="DD">
+                    <input type="number" style="width: 30%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; margin-right: 5px;" placeholder="MM">
+                    <input type="number" style="width: 30%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;" placeholder="YYYY">
+                </div>
+                
+                <div>
+                    <label style="display: block; margin-bottom: 5px; color: #333;">Password</label>
+                    <input type="password" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px;">
+                </div>
+                
+                <div style="display: flex; align-items: center; margin-top: 10px;">
+                    <input type="radio" id="tempPass" name="loginOption" style="margin-right: 5px;">
+                    <label for="tempPass" style="color: #333; font-size: 14px;">
+                        If you received a temporary password recently, you can use it to sign in here.
+                    </label>
+                </div>
+                
+                <a href="#" style="color: #1f4d6d; text-decoration: none; margin-bottom: 10px; display: block;">Forgot Password?</a>
+                
+                <p style="color: #666; font-size: 12px; margin-bottom: 10px;">
+                    Please keep your sign in details and password secure and never disclose them to anyone
+                </p>
+                
+                <a href="#" style="background-color: #1f4d6d; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; text-align: center; display: inline-block; width: 100px;">Learn More</a>
+                
+                <button type="submit" style="background-color: #1f4d6d; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; width: 100px;">
+                    Sign In
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div style="position: absolute; top: 10px; right: 10px;">
+        <a href="#" style="color: #1f4d6d; text-decoration: none;">Gaelige</a>
+    </div>
+</body>
+</html>

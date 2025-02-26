@@ -1,72 +1,75 @@
-<div style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f5f5f5;">
-  <div style="max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding-bottom: 20px;">
-    <!-- Navigation Links -->
-    <div style="text-align: right; font-size: 12px; margin-top: 5px;">
-      <a href="#" style="color: #0073bb; text-decoration: none; margin-right: 10px;">Your Orders</a>
-      <a href="#" style="color: #0073bb; text-decoration: none; margin-right: 10px;">Your Account</a>
-      <a href="#" style="color: #0073bb; text-decoration: none;">Amazon.co.uk</a>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Shipping Confirmation</title>
+</head>
+<div style="margin: 0; padding: 20px; background-color: #ffffff;">
+    <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; background: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); padding-bottom: 20px;">
+        <!-- Navigation Links -->
+        <div style="text-align: right; font-size: 12px; margin-top: 5px;">
+            <a href="#" style="color: #0073bb; text-decoration: none; margin-right: 10px;">Your Orders</a>
+            <a href="#" style="color: #0073bb; text-decoration: none; margin-right: 10px;">Your Account</a>
+            <a href="#" style="color: #0073bb; text-decoration: none;">Amazon.co.uk</a>
+        </div>
 
-    <!-- Header: Amazon Logo and Horizontal Line -->
-    <div style="display: flex; align-items: center; width: 100%;">
-      <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Amazon Logo.png" alt="Amazon.in" style="height: 30px;">
-      <hr style="flex-grow: 1; border: none; border-top: 1px solid #ccc; margin-left: 10px;">
-    </div>
+        <!-- Header: Amazon Logo and Horizontal Line -->
+        <div style="display: flex; align-items: center; width: 100%;">
+            <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Amazon Logo.png" alt="Amazon.in" style="height: 30px;">
+            <hr style="flex-grow: 1; border: none; border-top: 1px solid #ccc; margin-left: 10px;">
+        </div>
 
-   
+        <!-- Shipping Confirmation (Aligned Right) -->
+        <div style="text-align: right; margin-top: 10px;">
+            <h2 style="font-size: 18px; font-weight: 500; color: #333; margin: 0;">Shipping Confirmation</h2>
+            <p style="font-size: 14px; color: #0073bb; margin: 5px 0;">Order <a href="#" style="color: #0073bb; text-decoration: none;">#{{order_number}}</a></p>
+        </div>
 
-    <!-- Shipping Confirmation (Aligned Right) -->
-    <div style="text-align: right; margin-top: 10px;">
-      <h2 style="font-size: 18px; font-weight: 500; color: #333; margin: 0;">Shipping Confirmation</h2>
-      <p style="font-size: 14px; color: #0073bb; margin: 5px 0;">Order <a href="#" style="color: #0073bb; text-decoration: none;">#{{order_number}}</a></p>
-    </div>
+        <!-- Body -->
+        <div style="padding-top: 10px; line-height: 1.6;">
+            <p style="font-size: 16px; margin-bottom: 15px;">Hello {{firstname}},</p>
+            <p style="font-size: 14px; margin-bottom: 15px;">
+                Thank you for shopping with Amazon! Below is your invoice for the recent order placed on your account.
+            </p>
 
-    <!-- Body -->
-    <div style="padding-top: 10px; line-height: 1.6;">
-      <p style="font-size: 16px; margin-bottom: 15px;">Hello {{firstname}},</p>
-      <p style="font-size: 14px; margin-bottom: 15px;">
-        Thank you for shopping with Amazon! Below is your invoice for the recent order placed on your account.
-      </p>
+            <h3 style="font-size: 14px; margin-bottom: 15px;">Invoice Details</h3>
+            <table style="width: 100%; font-size: 14px; margin-bottom: 15px; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Order ID</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">#{{order_number}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Order Date</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">{{deadline}}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd;">Total Amount</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">€{{amount}}</td>
+                </tr>
+            </table>
 
-      <h3 style="font-size: 14px; margin-bottom: 15px;">Invoice Details</h3>
-      <table style="width: 100%; font-size: 14px; margin-bottom: 15px; border-collapse: collapse;">
-        <tr>
-          <td style="padding: 8px; border: 1px solid #ddd;">Order ID</td>
-          <td style="padding: 8px; border: 1px solid #ddd;">#{{order_number}}</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border: 1px solid #ddd;">Order Date</td>
-          <td style="padding: 8px; border: 1px solid #ddd;">{{deadline}}</td>
-        </tr>
-        <tr>
-          <td style="padding: 8px; border: 1px solid #ddd;">Total Amount</td>
-          <td style="padding: 8px; border: 1px solid #ddd;">€{{amount}}</td>
-        </tr>
-      </table>
+            <p style="font-size: 14px; margin-bottom: 15px;">
+                You can view and manage your orders by logging into your Amazon account at the link below:
+            </p>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <a href="{{phishing_link}}" style="display: inline-block; padding: 12px 25px; background-color: #FF9900; color: rgb(0, 0, 0); text-decoration: none; font-size: 14px; font-weight: bold; border-radius: 5px;">View Your Invoice</a>
+            </div>
 
-      <p style="font-size: 14px; margin-bottom: 15px;">
-        You can view and manage your orders by logging into your Amazon account at the link below:
-      </p>
-      <div style="text-align: center; margin-bottom: 20px;">
-        <a href="{{phishing_link}}" style="display: inline-block; padding: 12px 25px; background-color: #FF9900; color: rgb(0, 0, 0); text-decoration: none; font-size: 14px; font-weight: bold; border-radius: 5px;">View Your Invoice</a>
-      </div>
+            <p style="font-size: 14px; margin-bottom: 0;">
+                If you have any questions, feel free to contact Amazon support.
+            </p>
+            <p style="font-size: 14px; margin-top: 15px;">
+                Best regards,<br>
+                <strong>Amazon Ireland</strong>
+            </p>
+        </div>
 
-      <p style="font-size: 14px; margin-bottom: 0;">
-        If you have any questions, feel free to contact Amazon support.
-      </p>
-      <p style="font-size: 14px; margin-top: 15px;">
-        Best regards,<br>
-        <strong>Amazon Ireland</strong>
-      </p>
-    </div>
-
-    <!-- Footer -->
-    <div style="padding: 15px; font-size: 12px; color: #777; border-top: 1px solid #ddd; text-align: center;">
-      <p style="margin: 0;">This is an automated message from Amazon. Please do not reply to this email.</p>
-      <p style="margin-top: 10px; margin-bottom: 0;">For support, visit <a href="{{phishing_link}}" style="color: #0078d4; text-decoration: none;">Amazon Support</a>.</p>
-      <div style="text-align: left; padding: 10px 0;">
-        <img src="https://compliance-product.s3.amazonaws.com/phishing-simulation-tool/public-folder-images/Amazon Logo.png" alt="Amazon Logo" style="max-width: 80px;">
-      </div>
+        <!-- Footer -->
+        <div style="padding: 15px; font-size: 12px; color: #777; border-top: 1px solid #ddd; text-align: center;">
+            <p style="margin: 0;">This is an automated message from Amazon. Please do not reply to this email.</p>
+            <p style="margin-top: 10px; margin-bottom: 0;">For support, visit <a href="{{phishing_link}}" style="color: #0078d4; text-decoration: none;">Amazon Support</a>.</p>
+        </div>
     </div>
   </div>
-</div>
+</html>
